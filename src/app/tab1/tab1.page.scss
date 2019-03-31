@@ -2,3 +2,67 @@
   max-height: 35vh;
   overflow: hidden;
 }
+ion-card, ion-col {
+  width:100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  --background: transparent;
+}
+
+
+ion-img.category-images{
+  position: relative;
+}
+ion-card-title.category-title{
+  width: 100%;
+  height: 15px;
+  opacity: 0.6;
+  color: var(--ion-color-primary-contrast);
+  background-color: var(--ion-color-primary-tint);
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+
+ion-card-title{
+  font-size: 12px;
+}
+
+ion-card-content, ion-card-header{
+  padding: 2px;
+}
+ion-card-content{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+ion-slides{
+  margin-bottom: 8px;
+}
+ion-slide ion-img{
+  width: 100%;
+}
+.cat-title{
+  font-size: 8px
+}
+
+.welcome-guest{
+  margin-bottom: 1px;
+}
+.slider-text-focused{
+  font-size: 30px;
+  font-weight: 100;
+  text-shadow: 2px 2px #afa0a0;
+  color: #222428;
+  white-space: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

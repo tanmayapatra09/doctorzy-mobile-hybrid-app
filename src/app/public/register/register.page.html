@@ -1,0 +1,50 @@
+<ion-img src="/assets/img/login-screen-top-blue-bg-1.png"></ion-img>
+ <ion-content class="ion-padding-start ion-padding-end" text-center>
+    
+    <div class="login-page">
+      <ion-label color="primary text-18">Get Registered. Stay Healthy.</ion-label>
+      <form>
+        <ion-item>
+          <ion-grid fixed>
+            <ion-row>
+              <ion-col size="6">
+                <ion-input type="email" placeholder="First name"></ion-input>
+              </ion-col>
+              <ion-col size="6">
+                <ion-input type="email" placeholder="Last name"></ion-input>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <ion-input type="number" placeholder="Phone no." class="ion-padding-start ion-padding-end"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Password" class="ion-padding-start ion-padding-end"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Confirm password" class="ion-padding-start ion-padding-end"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="have any referal code?" class="ion-padding-start ion-padding-end"></ion-input>
+        </ion-item>
+        <p>
+        <ion-button type="submit" size="medium" class="login text-20">
+          <strong> Sign up </strong>
+        </ion-button>
+        </p>
+        <p>
+          <ion-label class="ion-padding" text-center>
+            Already have an account? <a href="/login" class="fw700 no-txdec">Signin here</a>
+          </ion-label>
+        </p>
+        <ion-label class="text-10">
+          by continuing, you are agree to <span (click)="termsAndConditions()" class="hyperlink">Terms & conditions</span>
+        </ion-label>
+      </form>
+    </div>
+  </ion-content>
+  
+  <ion-footer class="login-bottom-bg">
+    <ion-img src="/assets/img/login-footer-bg.png"></ion-img>
+  </ion-footer>

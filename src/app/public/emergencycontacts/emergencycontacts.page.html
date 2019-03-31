@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary" class="pd-toolbar">
+    <ion-buttons slot="start">
+      <ion-button href="/tabs/tab1" size="small">
+        <ion-icon name="arrow-round-back" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-label>Emergency Contacts</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item lines="full" *ngFor="let doctorcat of [1,2,3,4,5,6,7,8,9,10]">
+    <ion-avatar slot="start">
+      <img src="/assets/img/doctor-avatar.png">
+    </ion-avatar>
+    <ion-label>
+      <h3>Dr. Somnath banarjee</h3>
+      <p>+91-8895468545</p>
+      <p>Doctor</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

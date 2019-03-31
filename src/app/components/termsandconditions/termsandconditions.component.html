@@ -1,0 +1,18 @@
+<ion-header translucent>
+    <ion-toolbar color="transparent" class="pd-toolbar">
+      <ion-buttons slot="start">
+        <ion-button (click)="closeModal()" size="small">
+          <ion-icon name="arrow-round-back" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-label text-center class="fw500 text-14">Terms and Conditions</ion-label>
+  <ion-list>
+    <ion-item *ngFor="let tnc of [1,2,3,4,5,6,7]">
+      <p class="text-12">Terms and Conditions are great for limiting and restricting unwanted and undesirable behavior or activity on your mobile app</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-content class="ion-no-padding">
+  <div class="login-top-bg-del">
+    <ion-img src="/assets/img/login-screen-top-blue-bg.png"></ion-img>
+    <div class="inverted-circle"></div>
+  </div>
+</ion-content>
+<ion-content class="ion-padding-start ion-padding-end" text-center>
+  <div class="login-page">
+    <form>
+        <div text-right>
+          <ion-select placeholder="Login as" class="login-type ion-no-padding ion-margin-top">
+            <ion-select-option value="admin" >Admin</ion-select-option>
+            <ion-select-option value="customer" >Customer</ion-select-option>
+            <ion-select-option value="manager" >Manager</ion-select-option>
+          </ion-select>
+        </div>
+      <ion-item>
+        <ion-icon name="key" class="ion-padding-end"></ion-icon>
+        <ion-input type="email" placeholder="Registration number" class="ion-padding-start ion-padding-end"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock" class="ion-padding-end"></ion-icon>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+      <p><ion-label class="ion-padding" text-center>Forgot password? <a href="" class="fw700 no-txdec">Reset here</a></ion-label></p>
+      <ion-button type="submit" size="medium" class="login text-20">
+        <strong> Sign In </strong>
+      </ion-button>
+      <p>
+        <ion-label class="ion-padding" text-center>
+          Don't have an account? <a href="/register" class="fw700 no-txdec">Signup here</a>
+        </ion-label>
+      </p>
+      <ion-label class="text-10">
+        by continuing, you are agree to <span (click)="termsAndConditions()" class="hyperlink">Terms & conditions</span>
+      </ion-label>
+      <p>
+        <ion-label class="ion-padding" text-center>
+          <a href="/tabs/tab1" class="fw700 no-txdec">Skip to home</a>
+        </ion-label>
+      </p>
+    </form>
+  </div>
+</ion-content>
+
+<ion-footer class="login-bottom-bg">
+  <ion-img src="/assets/img/login-footer-bg.png"></ion-img>
+</ion-footer>

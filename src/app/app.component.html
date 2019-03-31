@@ -1,3 +1,72 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane>
+    <ion-menu class="my-left-menu">
+        <ion-header>
+          <ion-toolbar class="user-profile ion-no-margin">
+
+            <ion-item class="ion-no-margin" lines="none">
+              <ion-avatar slot="start" class="user-avatar">
+                <img src="assets/img/no-image-available.png">
+              </ion-avatar>
+              <ion-label>
+                <ion-text>
+                  <h2><strong>Tanmaya Patra</strong></h2>
+                </ion-text>
+                <ion-text color="secondary">
+                  <h3>
+                    bhubaneswar, IN
+                  </h3>
+                </ion-text>
+                <ion-menu-toggle class="mto" auto-hide="false">
+                  <a class="text08" tappable (click)="goToEditProgile()">
+                    <ion-text>
+                      <ion-icon name="contact"></ion-icon>
+                      <strong>&nbsp; edit profile</strong>
+                    </ion-text>
+                  </a> 
+                  <!-- <ion-text color="secondary"> | </ion-text> 
+                  <a class="text08" tappable (click)="logout()">
+                    <ion-text color="medium">
+                      <ion-icon name="log-out"></ion-icon>
+                      <strong>logout</strong>
+                    </ion-text>
+                  </a> -->
+                </ion-menu-toggle>
+              </ion-label>
+            </ion-item>
+
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="bg-profile">
+          <ion-list>
+            <ion-list-header>
+              <ion-label>Menu</ion-label>
+            </ion-list-header>
+
+            <ion-menu-toggle auto-hide="false" *ngFor='let menu of publiMenuList'>
+              <ion-item [routerLink]="[menu.url]" lines="full">
+                <ion-icon slot="start" [name]="menu.icon"></ion-icon>
+                <ion-label>
+                  {{menu.title}}
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+        </ion-content>
+
+        <ion-footer>
+            <ion-toolbar>
+              <ion-buttons slot="start">
+                <ion-button (click)="logout()">
+                  <ion-icon name="log-out" slot="start"></ion-icon>
+                  Logout
+                </ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-footer>
+      </ion-menu>
+
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>
