@@ -10,7 +10,15 @@ const routes: Routes = [
   { path: 'register', loadChildren: './public/register/register.module#RegisterPageModule' },
   { path: 'otp', loadChildren: './public/otp/otp.module#OtpPageModule' },
   { path: 'catdoctors', loadChildren: './public/catdoctors/catdoctors.module#CatdoctorsPageModule' },
-  { path: 'emergencycontacts', loadChildren: './public/emergencycontacts/emergencycontacts.module#EmergencycontactsPageModule' }
+  { path: 'emergencycontacts', loadChildren: './public/emergencycontacts/emergencycontacts.module#EmergencycontactsPageModule' },
+  { path: 'myservicepage', loadChildren: './public/myservicepage/myservicepage.module#MyservicepagePageModule' },
+  { path: 'individualprofile', loadChildren: './public/individualprofile/individualprofile.module#IndividualprofilePageModule' },
+  { path: 'searchdoctors', loadChildren: './public/searchdoctors/searchdoctors.module#SearchdoctorsPageModule' },
+  { path: 'diagcenter', loadChildren: './public/diagcenter/diagcenter.module#DiagcenterPageModule' },
+  { path: 'bookingconfirmation', loadChildren: './public/bookingconfirmation/bookingconfirmation.module#BookingconfirmationPageModule' },
+  { path: 'doctorscreen', loadChildren: './public/doctorscreen/doctorscreen.module#DoctorscreenPageModule' },
+  { path: 'checkpatientlist', loadChildren: './public/checkpatientlist/checkpatientlist.module#CheckpatientlistPageModule' },
+  { path: 'appointmenthistory', loadChildren: './public/appointmenthistory/appointmenthistory.module#AppointmenthistoryPageModule' },
 ];
 @NgModule({
   imports: [

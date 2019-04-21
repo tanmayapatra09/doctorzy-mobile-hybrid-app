@@ -7,6 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit {
+  slideConfig = {
+    slidesPerView: '1',
+    spaceBetween: 25,
+  };
   navCtrl: any;
   constructor(private router: Router) {
   }

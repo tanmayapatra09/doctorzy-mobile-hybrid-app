@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button size="small">
+          <ion-icon slot="start" name="options"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    <ion-title>Dentist</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content no-padding>
+
+  <ion-list lines="none">
+    <ion-item *ngFor="let list of [1,2,3,4,5]">
+      <ion-grid no-padding>
+        <ion-row>
+          <ion-col size="4">
+            <img class="rounded-image v-a-m" src="https://picsum.photos/100">
+          </ion-col>
+          <ion-col size="8">
+            <ion-card class="ion-no-margin ion-no-padding">
+                <ion-card-header class="ion-no-margin ion-no-padding bdr-b">
+                  <ion-card-title class="text-22 fw700">Dr. Avantika Anand</ion-card-title>
+                  <ion-card-title class="text-14"><ion-icon name="bus"></ion-icon> Software Developer</ion-card-title>
+                  <ion-card-title class="text-14"><ion-icon name="construct"></ion-icon> Plot no- 1029, Rajarani colony, Lewis Road</ion-card-title>
+                </ion-card-header>
+                <ion-card-content class="ion-no-margin ion-no-padding">
+                  <ion-grid fixed>
+                    <ion-row>
+                      <ion-col size="6" class="ion-no-margin ion-no-padding bdr-r"><ion-card-title class="text-14"><ion-icon name="bicycle"></ion-icon> PHP backen</ion-card-title></ion-col>
+                      <ion-col size="6" class="ion-no-margin ion-no-padding"><ion-card-title class="text-14"><ion-icon name="boat"></ion-icon> Mobile App</ion-card-title></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col size="6" class="ion-no-margin ion-no-padding bdr-r"><ion-card-title class="text-14"><ion-icon name="camera"></ion-icon> Mysql Database</ion-card-title></ion-col>
+                      <ion-col size="6" class="ion-no-margin ion-no-padding"><ion-card-title class="text-14"><ion-icon name="cart"></ion-icon> Visual Studio IDE</ion-card-title></ion-col>
+                    </ion-row>
+                  </ion-grid>
+                  <ion-row>
+                    <ion-col size="2"></ion-col>
+                    <ion-col size="10">
+                      <ion-button (click)="onClick()" color="primary" fill="solid" size="small" expand="full">
+                        Book an appointment
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                  
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      
+
+
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

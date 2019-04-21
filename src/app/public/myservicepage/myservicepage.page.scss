@@ -1,0 +1,20 @@
+ion-item{
+    border: 1px solid var(--ion-color-medium-shade);
+    margin: 5px;
+    padding: 5px;
+    -webkit-box-shadow: 0 4px 16px rgba(0,0,0,.12);
+    box-shadow: 0 4px 16px rgba(0,0,0,.12);
+}
+.sc-ion-card-ios-h{
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+ion-avatar{
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+.v-a-m{
+    vertical-align: middle;
+}

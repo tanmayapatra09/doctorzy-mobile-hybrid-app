@@ -62,7 +62,7 @@
 	font-weight: 700;
 	font-size: 30px;
 	text-transform: inherit;
-	color: var(--ion-color-primary);
+	color: var(--ion-color-primary-contrast);
 }
 // Override some predefined css
 
@@ -133,6 +133,12 @@ ion-label {
 .text-20 {
 	font-size: 20px !important;
 }
+.text-22 {
+	font-size: 22px !important;
+}
+.text-24 {
+	font-size: 24px !important;
+}
 
 .text-dimmed {
 	color: var(--ion-color-medium-shade);
@@ -142,17 +148,7 @@ ion-label {
 	font-size: 1rem !important;
 }
 
-.text12 {
-	font-size: 1.2rem;
-}
 
-.text15 {
-	font-size: 1.5rem;
-}
-
-.text20 {
-	font-size: 2rem;
-}
 
 .text-white {
 	color: #fff;
@@ -170,13 +166,22 @@ ion-label {
 	color: var(--ion-color-dark);
 }
 
+.bdr{
+	border: 1px solid var(--ion-color-medium-shade);
+}
 .bdr-t {
 	border-top: 1px solid var(--ion-color-medium-shade);
 }
-
 .bdr-l {
 	border-left: 1px solid var(--ion-color-medium-shade);
 }
+.bdr-r {
+	border-right: 1px solid var(--ion-color-medium-shade);
+}
+.bdr-b {
+	border-bottom: 1px solid var(--ion-color-medium-shade);
+}
+
 .hyperlink{
 	font-weight: 700;
 	cursor: pointer;
@@ -204,11 +209,24 @@ ion-toolbar.user-profile {
 ion-card {
 	&.sc-ion-card-md-h {
 		box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb), .24);
+		//box-shadow: none !important;
 	}
 }
 
+.shadow{
+	box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb), .24);
+}
 .tac {
 	text-align: center !important;
+}
+.tal {
+	text-align: left !important;
+}
+.tar {
+	text-align: right !important;
+}
+.vac{
+	vertical-align: middle !important;
 }
 
 // style for auth pages
@@ -286,4 +304,26 @@ ion-menu {
 
 .no-txdec {
 	text-decoration: none !important;
+}
+.rounded-image{
+	border-radius: 50%;
+	border: 1px solid var(--ion-color-primary);
+	-webkit-box-shadow: 0 4px 16px rgba(0,0,0,.12);
+    box-shadow: 0 4px 16px rgba(0,0,0,.12);
+}
+.rounded-image-no-style{
+	border-radius: 50%;
+}
+.rounded-border{
+	border-radius: 5px;
+}
+// Image manipulation
+.img-xs{
+	width: 30px;
+}
+.img-sm{
+	width: 50px;
+}
+.img-md{
+	width: 100px;
 }

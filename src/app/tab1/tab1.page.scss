@@ -2,16 +2,36 @@
   max-height: 35vh;
   overflow: hidden;
 }
-ion-card, ion-col {
+ion-card.services {
   width:100%;
   margin: 0 !important;
   padding: 0 !important;
   --background: transparent;
+  border: 1px solid #ccc !important;
+  border-radius: 20px !important;
 }
-
-
+ion-card.top-doctor {
+  width:100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  --background: transparent;
+  border: 1px solid var(--ion-color-medium-shade) !important;
+  border-radius: 20px !important;
+}
+.padding-low{
+  padding: 2px;
+}
+.padding-med{
+  padding:5px;
+}
 ion-img.category-images{
-  position: relative;
+  width: 40%;
+  text-align: center;
+  margin: 10% 30%;
+}
+img.slider-image{
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb), .24);
 }
 ion-card-title.category-title{
   width: 100%;
@@ -40,7 +60,6 @@ ion-card-content, ion-card-header{
 ion-card-content{
   position: relative;
   text-align: center;
-  color: white;
 }
 ion-slides{
   margin-bottom: 8px;

@@ -19,8 +19,23 @@ export class AppComponent {
     { title: 'Privacy Policy', url: '/home', icon: 'home', access: 'public' },
     { title: 'Rate us on Playstore', url: '/home', icon: 'home', access: 'public' },
     { title: 'Share App', url: '/home', icon: 'home', access: 'public' },
-    { title: 'Intro Screen', url: '/welcome', icon: 'home', access: 'public' },
+    
+    { title: 'Below generated Pages', url: '/', icon: 'home', access: 'public' },
     { title: 'Login', url: '/login', icon: 'home', access: 'public' },
+    { title: 'Register', url: '/register', icon: 'home', access: 'public' },
+    // Extra Urls for testing
+    { title: 'Intro Screen', url: '/welcome', icon: 'home', access: 'public' },
+    { title: 'Doctors List', url: '/myservicepage', icon: 'home', access: 'public' },
+    { title: 'Doctor Profile', url: '/individualprofile', icon: 'home', access: 'public' },
+    { title: 'Search Doctor', url: '/searchdoctors', icon: 'home', access: 'public' },
+    { title: 'Search Diagnostics', url: '/diagcenter', icon: 'home', access: 'public' },
+    { title: 'Booking Confirmation', url: '/bookingconfirmation', icon: 'home', access: 'public' },
+    { title: 'Doctors Screen', url: '/doctorscreen', icon: 'home', access: 'public' },
+    { title: 'Appointment History', url: '/appointmenthistory', icon: 'home', access: 'public' },
+    { title: 'Check Patient List', url: '/checkpatientlist', icon: 'home', access: 'public' },
+
+    { title: 'OTP Page', url: '/otp', icon: 'home', access: 'public' },
+    { title: 'Emergency contacts', url: '/emergencycontacts', icon: 'home', access: 'public' },
   ];
   public privateMenuList = [
     { title: 'Home', url: '/tabs/tab1', icon: 'home', access: 'public' },

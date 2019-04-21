@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <ion-label>Location</ion-label>
+        <ion-select value="bhubaneswar" okText="Okay" cancelText="Cancel">
+          <ion-select-option value="bhubaneswar">Bhubaneswar</ion-select-option>
+          <ion-select-option value="cuttack">Cuttack</ion-select-option>
+          <ion-select-option value="berhampur">Berhampur</ion-select-option>
+          <ion-select-option value="sambalpur">Sambalpur</ion-select-option>
+        </ion-select>
+    </ion-buttons>
+    <ion-title>Search Doctors</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar value="Doctors, Specialists, Hospitals"></ion-searchbar>
+
+<ion-list lines="none">
+  <p class="text-18 ion-no-padding ion-no-margin">&nbsp; &nbsp; Search by health concern</p>
+  <!-- <ion-item>
+    <ion-label class="text-18 ion-no-padding ion-no-margin" text-left>Search by health concern</ion-label>
+  </ion-item> -->
+</ion-list>
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="6" *ngFor="let doc of categories">
+      <ion-grid no-padding class="doctor-category">
+        <ion-row color="medium">
+          <ion-col size="4">
+            <ion-thumbnail>
+              <img src="../../assets/img/svc/{{doc.icon}}" class="">
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col size="8">
+            <p>{{doc.name}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>

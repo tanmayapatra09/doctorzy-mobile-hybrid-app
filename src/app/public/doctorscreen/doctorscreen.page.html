@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button size="small">
+          <ion-icon slot="start" name="clipboard"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    <ion-title>Doctor Screen 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid ion-no-padding>
+    <ion-row>
+      <ion-col size="7" class="ion-margin-top ion-padding-start">
+        <p class="text-14 ion-margin-top">Welcome !</p>
+        <p class="text-20 ion-margin-bottom">Dr Nikita Anand</p>
+        <ion-row>
+          <ion-col size="12" class="ion-no-padding ion-no-margin">
+            <ion-button (click)="onClick()" color="primary" fill="solid" size="small">
+              Edit Profile
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        
+      </ion-col>
+      <ion-col size="5" class="tac ion-margin-top">
+        <ion-img class="rounded-image-no-style" src="../../assets/img/doctor-avatar.png"></ion-img>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col size="12" class="ion-no-padding">
+        <ion-img src="../../assets/img/grey-eliptical-image.JPG"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <form>
+      <ion-list>
+      <ion-title class="text-20">Check your Patients</ion-title>    
+      </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-label>Select Clinic</ion-label>
+          <ion-select value="clinic_1" okText="Okay" cancelText="Dismiss">
+            <ion-select-option value="clinic_1">Clinic 1</ion-select-option>
+            <ion-select-option value="clinic_2">Clinic 2</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Select Date</ion-label>
+          <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>Select Time</ion-label>
+          <ion-datetime display-format="HH:mm"></ion-datetime>
+        </ion-item>
+        
+      </ion-list>
+      <ion-row>
+        <ion-col size="12" class="tac">
+          <ion-button (click)="onClick()" color="primary" fill="solid" size="large" class="rounded">
+            Get Patient List
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+
+
+    <!-- Ion Slider start -->
+    <ion-slides pager="true" [options] = "slideConfig">
+      <ion-slide *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]">
+        
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title class="text-20">Awesome Title</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-align-items-start">
+            <p>Ionic provides a set of utility attributes that can be used on any element in order to modify the text or adjust the padding or margin.</p>
+            <ion-button (click)="onClick()" color="primary" fill="solid" size="small" class="tar rounded">
+              Button
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-slide>
+    </ion-slides>
+    <!-- Ionic sldier end -->
+</ion-content>

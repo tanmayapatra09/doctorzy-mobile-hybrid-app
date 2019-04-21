@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Appointment History  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid no-padding class="ion-no-margin ion-no-padding">
+      <ion-row class="bdr-b">
+        <ion-col size="6" class="ion-no-margin ion-no-padding">
+         <ion-buttons class="ion-margin">
+           <ion-button (click)="onClick()" color="secondary" size="small" fill="solid">
+             Upcoming
+           </ion-button>
+           <ion-button (click)="onClick()" color="secondary" size="small" fill="solid">
+            Past
+          </ion-button>
+         </ion-buttons>
+        </ion-col>
+        <ion-col size="6" class="align-self-center">
+            <!-- <ion-select value="1" okText="Ok" cancelText="Can" class="ion-no-margin ion-no-padding vac">
+              <ion-select-option value="1" class="text-12">Doctor's Appointment</ion-select-option>
+              <ion-select-option value="2" class="text-12">Nurse's Appointment</ion-select-option>
+            </ion-select> -->
+
+            <ion-item lines="none">
+              <ion-select value="1" placeholder="Select One" class="ion-no-margin ion-no-padding vac">
+                  <ion-select-option value="1" class="text-12">Doctor's Appointment</ion-select-option>
+                  <ion-select-option value="2" class="text-12">Nurse's Appointment</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-label class="text-20 ion-margin" color="primary">Upcoming Appointment</ion-label>
+    
+    <ion-card *ngFor="let number of [1,2,3,4,5]" class="shadow">
+      <ion-card-content>
+        <ion-grid no-padding>
+          <ion-row>
+            <ion-col size="3">
+              <div class="date-section tac">
+                <div class="t-style-1"> 24 </div> 
+                <div class="t-style-2"> April </div> 
+                <div class="t-style-3"> 2019 </div> 
+              </div>
+            </ion-col>
+            <ion-col size="9">
+
+              <ion-row>
+                <ion-col size="4" class="ion-no-padding">
+                  <span class="bold text-18">Doctor: </span>
+                </ion-col>
+                <ion-col size="8" class="ion-no-padding">
+                  <span class="text-16">
+                    Dr. Nikita Anand <br>
+                  </span>
+                  <span class="text-14">
+                    (dasd sadsadsa asd)
+                  </span>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col size="4" class="ion-no-padding">
+                  <span class="bold text-18">Clinic: </span>
+                </ion-col>
+                <ion-col size="8" class="ion-no-padding">
+                  <span class="text-16">
+                    Jayadev Bihar, BBSR
+                  </span>
+                  <span class="text-14">
+                    (dasd sadsadsa asd)
+                  </span>
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="bdr-b">
+                <ion-col size="4" class="ion-no-padding">
+                  <span class="bold text-18">Timing: </span>
+                </ion-col>
+                <ion-col size="8" class="ion-no-padding">
+                  <span class="text-16">
+                    11:00 AM <br>
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-badge color="success" class="text-14">Confirmed</ion-badge> <ion-badge color="light" class="text-14">Your Serial is : 00008</ion-badge>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="12" >
+              <ion-buttons class="tac">
+                <ion-button (click)="onClick()" color="primary" size="small" fill="solid" class="rounded-border">
+                  Reschedule
+                </ion-button>
+                <ion-button (click)="onClick()" color="primary" size="small" fill="solid" class="rounded-border">
+                  Cancel
+                </ion-button>
+                <ion-button (click)="onClick()" color="primary" size="small" fill="solid" class="rounded-border">
+                  navigate
+                </ion-button>
+              </ion-buttons>
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+</ion-content>

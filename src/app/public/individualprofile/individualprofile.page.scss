@@ -1,0 +1,15 @@
+.rounded-image{
+    border-radius: 50%;
+}
+.description{
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+form{
+    ion-label, ion-select, ion-input{
+        font-size: 12px;
+    }
+}
+ion-card{
+    border: 1px solid var(--ion-color-medium-shade);
+}

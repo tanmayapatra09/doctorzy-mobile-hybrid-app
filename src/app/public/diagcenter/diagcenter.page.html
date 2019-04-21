@@ -1,0 +1,75 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-button size="small">
+            <ion-icon slot="start" name="clipboard"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      <ion-title>Search Diagnostics</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content no-padding>
+  <ion-toolbar color="primary">
+      <ion-list lines="none" class="ion-no-margin ion-no-padding" >
+          <ion-item color="primary">
+            <ion-label>Select Location</ion-label>
+            <ion-select value="bhubaneswar" okText="Okay" cancelText="Cancel">
+                <ion-select-option value="bhubaneswar">Bhubaneswar</ion-select-option>
+                <ion-select-option value="cuttack">Cuttack</ion-select-option>
+                <ion-select-option value="berhampur">Berhampur</ion-select-option>
+                <ion-select-option value="sambalpur">Sambalpur</ion-select-option>
+              </ion-select>
+          </ion-item>
+        </ion-list>
+  </ion-toolbar>
+
+    <ion-list lines="full" class="ion-margin-top">
+      <ion-item *ngFor="let list of [1,2,3,4,5]">
+
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="4">
+              <div>
+                <img class="square-image" src="https://picsum.photos/100">
+              </div>  
+              <p class="ion-no-margin ion-no-padding text-12"><ion-icon name="heart"></ion-icon> 10% OFF Available</p>
+            </ion-col>
+            <ion-col size="8">
+              <ion-card class="ion-no-margin ion-no-padding">
+                  <ion-card-header class="ion-no-margin ion-no-padding">
+                    <ion-card-title class="text-22">Mr. Tanmaya Patra</ion-card-title>
+                    <ion-card-title class="text-14"><ion-icon name="bus"></ion-icon> Software Developer</ion-card-title>
+                    <ion-card-title class="text-14"><ion-icon name="construct"></ion-icon> Plot no- 1029, Rajarani colony, Lewis Road</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content class="ion-no-margin ion-no-padding">
+                    <ion-row>
+                      <ion-col size="6"></ion-col>
+                      <ion-col size="6">
+                        <ion-button (click)="onClick()" color="primary" fill="solid" size="small" expand="full">
+                          Book Test
+                        </ion-button>
+                      </ion-col>
+                    </ion-row>
+                    
+                  </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        
+       
+  
+        
+  
+      
+      </ion-item>
+    </ion-list>
+  
+  
+  </ion-content>
+  
