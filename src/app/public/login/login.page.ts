@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
-import { LoadingController, ModalController } from '@ionic/angular';
+import { LoadingController, ModalController, Platform } from '@ionic/angular';
 import { TermsandconditionsComponent } from 'src/app/components/termsandconditions/termsandconditions.component';
 
 @Component({
@@ -10,9 +10,21 @@ import { TermsandconditionsComponent } from 'src/app/components/termsandconditio
 })
 export class LoginPage implements OnInit {
   isLoading = false;
-  constructor(private modalController: ModalController) { }
+  imageUrl: string;
+  platformWidth: number;
+  constructor(private modalController: ModalController, private platform: Platform) {
+    this.platformWidth = platform.width();
+    if(this.platformWidth <= 400){
+      this.imageUrl = '/assets/img/login-screen-top-blue-bg.png';
+    }else{
+      this.imageUrl = '/assets/img/login-screen-top-blue-bg-1.png';
+    }
+    console.log('Width: ' + platform.width());
+    console.log('Height: ' + platform.height());
+  }
 
   ngOnInit() {
+    
   }
 
   // Loading Controller to show a loading popup while contents being loaded

@@ -44,7 +44,9 @@
 .bg-tertiary {
 	background-color: var(--ion-color-tertiary);
 }
-
+.bg-tint{
+	background-color: var(--ion-color-light-tint);
+}
 .bg-profile {
 	background-image: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary))
 }
@@ -139,7 +141,9 @@ ion-label {
 .text-24 {
 	font-size: 24px !important;
 }
-
+.text-xl{
+	font-size: 35px;
+}
 .text-dimmed {
 	color: var(--ion-color-medium-shade);
 }
@@ -164,6 +168,9 @@ ion-label {
 
 .text-dark {
 	color: var(--ion-color-dark);
+}
+.text-fadded{
+
 }
 
 .bdr{
@@ -206,15 +213,18 @@ ion-toolbar.user-profile {
 }*/
 
 // Android card shadow
-ion-card {
-	&.sc-ion-card-md-h {
-		box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb), .24);
+//ion-card {
+	//&.sc-ion-card-md-h {
+		//box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb), .24);
 		//box-shadow: none !important;
-	}
-}
+	//}
+//}
 
 .shadow{
 	box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb), .24);
+}
+.shadow-thick{
+	box-shadow: 0 3px 12px rgba(var(--ion-color-dark-rgb), 0.54)
 }
 .tac {
 	text-align: center !important;
@@ -316,6 +326,9 @@ ion-menu {
 }
 .rounded-border{
 	border-radius: 5px;
+}
+.rounded-border-25{
+	border-radius: 25px !important;
 }
 // Image manipulation
 .img-xs{

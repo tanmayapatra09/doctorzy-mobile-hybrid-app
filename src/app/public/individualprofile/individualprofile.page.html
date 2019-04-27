@@ -13,8 +13,8 @@
   
 </ion-header>
 
-<ion-content np-padding>
-  <ion-card>
+<ion-content no-padding>
+  <ion-card class="shadow-thick">
     <ion-card-content class="ion-no-padding ion-no-margin">
       <ion-grid no-padding>
         <ion-row>
@@ -28,16 +28,19 @@
         </ion-row>
         <ion-row>
           <ion-col size="2"></ion-col>
-          <ion-col size="8" text-center>
-            <ion-label color="primary" class="text-24 fw700" text-center>Dr. Avantika Anand</ion-label> <br>
+          <ion-col size="8" class="ion-padding-none ion-margin-none">
+            <ion-label color="primary" class="text-24 fw700 tac" text-center>Dr. Avantika Anand</ion-label> <br>
+
+            <ion-label color="dark" class="text-12 " text-left><ion-icon name="bus" class="vac"></ion-icon> Software Developer</ion-label> <br>
+            <ion-label color="dark" class="text-12" text-left><ion-icon name="bus" class="vac"></ion-icon> Plot no- 1029, Rajarani colony, Lewis Road</ion-label> <br>
+
           </ion-col>
           <ion-col size="2"></ion-col>
         </ion-row>
         <ion-row>
           <ion-col size="2"></ion-col>
-          <ion-col size="8" text-left>
-            <ion-label color="primary" class="text-12" text-left><ion-icon name="bus" class="vac"></ion-icon> Software Developer</ion-label> <br>
-            <ion-label color="primary" class="text-12" text-left><ion-icon name="bus" class="vac"></ion-icon> Plot no- 1029, Rajarani colony, Lewis Road</ion-label> <br>
+          <ion-col size="8" text-left class="ion-padding-none">
+            
           </ion-col>
           <ion-col size="2"></ion-col>
         </ion-row>
@@ -58,10 +61,10 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
+  <ion-card class="shadow-thick">
     <ion-card-content class="ion-no-margin ion-no-padding description bdr-b ion-margin-bottom">
       <!-- <ion-label class="text-10">Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font. Completely open source, MIT licensed and built by the Ionic Framework team</ion-label> -->
-      <ion-title text-justify class="fw500">Know more about Dr. Avantika Anand</ion-title>
+      <p text-justify class="fw500 tac text-20">Know more about Dr. Avantika Anand</p>
       <p class="text-12">Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font. Completely open source, MIT licensed and built by the Ionic Framework team. Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font. Completely open source, MIT licensed and built by the Ionic Framework team</p>
     </ion-card-content>
     <ion-card-content class="ion-no-margin ion-no-padding description">
@@ -95,18 +98,18 @@
         <ion-datetime display-format="HH:mm"></ion-datetime>
       </ion-item>
       <ion-item>
-        <ion-label>Serial No</ion-label>
+        <ion-label>Select Serial No</ion-label>
         <ion-select multiple="true" placeholder="Select Pizza">
           <ion-select-option value="peperoni">Peperoni</ion-select-option>
           <ion-select-option value="hawaii">Hawaii</ion-select-option>
         </ion-select>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">Full Name</ion-label>
+        <ion-label position="fixed">Patient Full Name</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">Contact</ion-label>
+        <ion-label position="fixed">Patient Contact Details</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
     </ion-list>

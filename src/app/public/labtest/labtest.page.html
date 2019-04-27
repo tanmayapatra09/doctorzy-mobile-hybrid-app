@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-button size="small">
+            <ion-icon slot="start" name="clipboard"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      <ion-title>Lab Test</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content no-padding>
+    <ion-list lines="none" class="bg-tint">
+      <p class="text-20 bold ion-no-margin">&nbsp; &nbsp; Fill up the details</p>
+    </ion-list>
+    <form>
+      <ion-list>
+        
+        <ion-item>
+          <p class="ion-padding-end">Select Test</p>
+          <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+            <ion-select-option value="brown">Brown</ion-select-option>
+            <ion-select-option value="blonde">Blonde</ion-select-option>
+            <ion-select-option value="black">Black</ion-select-option>
+            <ion-select-option value="red">Red</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <p class="ion-padding-end" position="fixed">Full name</p>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <p class="ion-padding-end" position="fixed">Contact Details</p>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <p class="ion-padding-end" position="fixed">Address Details</p>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <p class="ion-padding-end">Select Date</p>
+          <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <p class="ion-padding-end">Select Visit Time</p>
+          <ion-datetime display-format="HH:mm"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Coupon Code"></ion-input>
+            <ion-button (click)="onClick()" size="default">
+              Apply
+            </ion-button>
+        </ion-item>
+      </ion-list>
+    </form>
+    <ion-list class="tac">
+      <p class="text-xl sumtotal text-dimmed">Total Bill: <span class="bold"> &#8377; 500</span></p>
+    </ion-list>
+
+    <ion-list class="tac">
+      <!-- Checkbox Colors -->
+      <ion-checkbox color="secondary" class="vac"></ion-checkbox> &nbsp;&nbsp; <span class="text-18 vac bold">I agree with <a href="">terms & conditions </a></span>
+    </ion-list>
+  </ion-content>
+  
+  <ion-footer class="footer" color="primary">
+    <ion-toolbar color="primary">
+      <ion-button expand="full" color="primary" class="footer-buttons-full" size="large">Confirm Booking <ion-icon name="arrow-round-forward"></ion-icon></ion-button>
+    </ion-toolbar>
+  </ion-footer>

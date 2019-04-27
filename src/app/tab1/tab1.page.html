@@ -23,7 +23,26 @@
       <!-- Ion Slider start -->
       <ion-slides pager="true" [options] = "slideConfig" >
         <ion-slide *ngFor="let number of [1,2,3]" >
-          <img class="slider-image" src="../../assets/img/sliders/home-slider-00{{number}}.jpg">
+          <!-- <img class="slider-image" src="../../assets/img/sliders/home-slider-00{{number}}.jpg" (click)="redirectSliderImage(number)"> -->
+
+          <ion-card color="light">
+            <ion-card-content class="slider rounded-border">
+              <ion-grid no-padding>
+                <ion-row>
+                  <ion-col size="6">
+                    <p class="text-18 ion-padding text-primary bold tal">Hi Animesh, How are you</p>
+                    <ion-button (click)="onClick()" class="rounded text-12">
+                      Book Appointment
+                    </ion-button>
+                  </ion-col>
+                  <ion-col size="6">
+                    <img class="" src="../../assets/img/intro-slider-2.PNG">
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+
         </ion-slide>
       </ion-slides>
       <!-- Ionic sldier end -->

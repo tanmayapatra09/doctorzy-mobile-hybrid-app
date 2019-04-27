@@ -1,6 +1,26 @@
 .rounded-image{
+    clear: both;
+    margin: auto;
+    position: relative;
     border-radius: 50%;
+    vertical-align: middle;
 }
+
+.user-info{
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    background: rgb(255, 255, 255);
+    z-index: 0;
+    padding-top: 35px;
+}
+.user-image{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
 .description{
     padding-left: 4px !important;
     padding-right: 4px !important;
@@ -11,5 +31,5 @@ form{
     }
 }
 ion-card{
-    border: 1px solid var(--ion-color-medium-shade);
+    //border: 1px solid var(--ion-color-medium-shade);
 }

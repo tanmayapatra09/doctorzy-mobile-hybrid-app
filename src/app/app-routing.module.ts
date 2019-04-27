@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'doctorscreen', loadChildren: './public/doctorscreen/doctorscreen.module#DoctorscreenPageModule' },
   { path: 'checkpatientlist', loadChildren: './public/checkpatientlist/checkpatientlist.module#CheckpatientlistPageModule' },
   { path: 'appointmenthistory', loadChildren: './public/appointmenthistory/appointmenthistory.module#AppointmenthistoryPageModule' },
+  { path: 'labtest', loadChildren: './public/labtest/labtest.module#LabtestPageModule' },
 ];
 @NgModule({
   imports: [

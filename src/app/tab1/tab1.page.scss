@@ -61,6 +61,12 @@ ion-card-content{
   position: relative;
   text-align: center;
 }
+.sc-ion-card-md-h{
+  border-radius: 25px !important;
+}
+ion-button{
+  --border-radius: 25px !important;
+}
 ion-slides{
   margin-bottom: 8px;
 }

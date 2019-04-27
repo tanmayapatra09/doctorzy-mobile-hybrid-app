@@ -24,26 +24,29 @@
           <!-- Ion Slider start -->
           <ion-slides pager="false" [options] = "slideConfig">
               <ion-slide *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]" color="primary" class="ion-justify-content-center">
-                <p (click)="onClick()" class="text-12 date-slider ion-padding-horizontal slider">24 Apr</p>
+                <ion-button (click)="onClick()" size="small" class="top-slider-button" color="dark">
+                    24 Apr
+                </ion-button>
+                <!-- <p (click)="onClick()" class="text-12 date-slider ion-padding-horizontal slider">24 Apr</p> -->
               </ion-slide>
           </ion-slides>
           <!-- Ionic sldier end -->
         </ion-col>
         <ion-col size="6">
-            <ion-select value="clinic_1" okText="Okay" cancelText="Dismiss" class="ion-no-margin ion-no-padding ">
-              <ion-select-option value="clinic_1" class="text-12">09:10</ion-select-option>
-              <ion-select-option value="clinic_2" class="text-12">09:30</ion-select-option>
+            <ion-select value="clinic_1" okText="Okay" cancelText="Dismiss" placeholder="Change Timing" class="ion-no-margin ion-no-padding ">
+              <ion-select-option value="clinic_1" class="text-16">09:10</ion-select-option>
+              <ion-select-option value="clinic_2" class="text-16">09:30</ion-select-option>
             </ion-select>
         </ion-col>
       </ion-row>
-    <ion-row>
+    <ion-row class="bg-tint">
       <ion-col size="6">
-        <p class="ion-no-margin ion-no-padding text-14">showing results for</p>
+        <p class="ion-no-margin ion-no-padding text-16">showing results for</p>
       </ion-col>
       <ion-col size="6">
         <ion-select value="clinic_1" okText="Okay" cancelText="Dismiss" class="ion-no-margin ion-no-padding ">
-          <ion-select-option value="clinic_1" class="text-12">Clinic 1</ion-select-option>
-          <ion-select-option value="clinic_2" class="text-12">Clinic 2</ion-select-option>
+          <ion-select-option value="clinic_1" class="text-16">Clinic 1</ion-select-option>
+          <ion-select-option value="clinic_2" class="text-16">Clinic 2</ion-select-option>
         </ion-select>
       </ion-col>
     </ion-row>
@@ -53,15 +56,15 @@
 
 <ion-row class=" patient-list shadow" *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]">
     <ion-col size="9">
-      <p class="text-12 ion-no-margin">
+      <p class="text-16 ion-no-margin">
         <span class="bold">Serial No: </span>
         <span>NP009834RTY</span>
       </p>
-      <p class="text-12 ion-no-margin">
+      <p class="text-16 ion-no-margin">
         <span class="bold">Patient Name: </span>
         <span>Tanmaya Patra</span>
       </p>
-      <p class="text-12 ion-no-margin">
+      <p class="text-16 ion-no-margin">
         <span class="bold">Contact No: </span>
         <span>8895412563</span>
       </p>

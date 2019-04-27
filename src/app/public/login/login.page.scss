@@ -12,7 +12,9 @@ ion-content{
     width: 40%;
     left: 50%;
 }
-
+.top-section{
+    background: var(--ion-color-primary);
+}
 
 .login-top-bg{
     background: url('/assets/img/login-screen-top-blue-bg.png');

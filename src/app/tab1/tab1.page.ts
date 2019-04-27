@@ -17,4 +17,8 @@ export class Tab1Page implements OnInit {
   ngOnInit() {
     
   }
+  redirectSliderImage() {
+    console.log("I will be redirected");
+    // Put your redirection Links
+  }
 }

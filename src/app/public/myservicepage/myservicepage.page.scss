@@ -5,9 +5,12 @@ ion-item{
     -webkit-box-shadow: 0 4px 16px rgba(0,0,0,.12);
     box-shadow: 0 4px 16px rgba(0,0,0,.12);
 }
-.sc-ion-card-ios-h{
+.sc-ion-card-ios-h, .sc-ion-card-md-h{
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+}
+ion-button {
+    --border-radius: 25px !important;
 }
 ion-avatar{
     img{

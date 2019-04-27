@@ -33,6 +33,7 @@ export class AppComponent {
     { title: 'Doctors Screen', url: '/doctorscreen', icon: 'home', access: 'public' },
     { title: 'Appointment History', url: '/appointmenthistory', icon: 'home', access: 'public' },
     { title: 'Check Patient List', url: '/checkpatientlist', icon: 'home', access: 'public' },
+    { title: 'Lab Test', url: '/labtest', icon: 'home', access: 'public' },
 
     { title: 'OTP Page', url: '/otp', icon: 'home', access: 'public' },
     { title: 'Emergency contacts', url: '/emergencycontacts', icon: 'home', access: 'public' },
