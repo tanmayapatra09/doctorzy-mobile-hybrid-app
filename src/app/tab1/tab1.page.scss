@@ -48,10 +48,13 @@ ion-card-title.category-title{
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
 }
-
+ion-card-subtitle{
+  margin-top: 5px;
+}
 
 ion-card-title{
   font-size: 12px;
+  padding-bottom: 5px;
 }
 
 ion-card-content, ion-card-header{
@@ -61,8 +64,16 @@ ion-card-content{
   position: relative;
   text-align: center;
 }
-.sc-ion-card-md-h{
-  border-radius: 25px !important;
+ion-card.no-border-radius{
+  border-radius: 0px !important;
+}
+.small-avatar{
+  width: 50px;
+}
+.catgory-slider-icon{
+  width: 80px;
+  margin: auto;
+  padding: 10px 5px;
 }
 ion-button{
   --border-radius: 25px !important;
