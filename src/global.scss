@@ -119,6 +119,19 @@ ion-label {
     margin-top: 20%;
     margin-bottom: 20%;
 }
+.spacer-tl{
+margin-top: 5%;
+margin-left: 5%;
+}
+.spacer-l {
+margin-left: 5%;
+}
+.spacer-t {
+margin-top: 5%;
+}
+.spacer-r {
+margin-right: 5%;
+}
 
 // Differnt Tex
 .text-08 {
@@ -165,6 +178,25 @@ ion-label {
 	font-size: 1rem !important;
 }
 
+// Text Media query
+@media (min-width:600px) {
+	p {
+	  font-size: 10px !important;
+	}
+  }
+  
+  @media (min-width:800px) {
+	p {
+	  font-size: 14px !important;
+	}
+  }
+  
+  @media (min-width:1000px) {
+	p {
+	  /* Never get larger than this */
+	  font-size: 18px !important;
+	}
+}
 
 
 .text-white {

@@ -2,9 +2,25 @@ ion-grid.doctor-category{
     //border: 1px solid var(--ion-color-medium-shade);
     background: #f1f1f1;
 }
+ion-grid{
+    .doctor-category {
+        min-height: 70px;
+    }
+    p {
+        margin-left: 2px;
+    }
+}
 .doc-cat-title{
     vertical-align: middle;
 }
 ion-thumbnail{
     --size: 35px;
+}
+
+
+.vertical-align-content > *
+{
+     display: flex!important;
+     align-content: center!important;
+     align-items: center!important;
 }
